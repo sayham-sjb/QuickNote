@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quick Note</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Quick Note</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0">
+                <input id="txtSearch" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="btnSearch" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container my-3">
+        <div class="card" style="width: 100%;">
+            <div class="card-body">
+                <h5 class="card-title">Add Note</h5>
+<!--                <textarea id="txtTitle" class="form-control" rows="1"></textarea>-->
+                <div class="form-group">
+                    <!--    <label for="exampleFormControlTextarea1">Example textarea</label>-->
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button id="btnAddNote" class="btn btn-primary">Add Note</button>
+            </div>
+        </div>
+        <h1>All Notes</h1>
+        <div id="allNotes" class="row container-fluid"></div>
+    </div>
+    <script type="text/javascript" src="js/QuickNote.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+</body>
+
+</html>
